@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-position:  top -550px  right 600px , top 300px left 500px;
+      background-repeat: no-repeat, no-repeat;
+      background-color: #19A1AD;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+    }
+    #tile{
+      border: none;
+      border-radius: 11px;
+      background-color: white;
+      background-image: url(images/bg-pattern-card.svg);
+      background-position: top ;
+      background-repeat: no-repeat;
+      height: 400px;
+      width: 350px;
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+    img{
+      position: absolute;
+      top:95px;
+      border: 5px solid white;
+      border-radius: 50px;
+    }
+    #name{
+      position: absolute;
+      top: 200px;
+      display: grid;
+      grid-template: 20px 20px / 5fr 1fr;
+      grid-gap: 5px;
+    }
+    hr{
+      position: absolute;
+      top:270px;
+      color:grey;
+      width: 21.5em;
+    }
+    #elements{
+      position: absolute;
+      top:290px;
+      display: flex;
+      justify-content: space-evenly;
+      width:100%;
+    }
+    .elementals{
+      line-height: 2px;
+    }
+    p{
+      text-align: center;
+    }
+    h4{
+      text-align: center;
+    }
+    p:first-child{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id = "tile">
+    <img src = "images/image-victor.jpg"/>
+    <div id = "name">
+      <p>Victor Crest</p>
+      <p>26</p>
+      <p style = "grid-column:1/3;text-align: center;">London</p>
+    </div>
+    <br>
+    <hr>
+    <div id = "elements">
+      <div class = "elementals">
+        <h4>80K</h4>
+        <p>Followers</p>
+      </div>
+      <div class = "elementals">
+        <h4>803K</h4>
+        <p>Likes</p>
+      </div>
+      <div class = "elementals">
+        <h4>1.4K</h4>
+        <p>Photos</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nanthakumar</a>.
+  </div>
+</body>
+</html>
